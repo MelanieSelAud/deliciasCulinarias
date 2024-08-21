@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delicias Culinarias</title>
+    <link rel="stylesheet" href="estilos/principal.css">
+    <link rel="stylesheet" href="estilos/welcome.css">
+    <link rel="stylesheet" href="estilos/recetas.css">
+    <link rel="stylesheet" href="estilos/menu.css">
+    <link rel="stylesheet" href="estilos/fontello.css">
+    <link rel="stylesheet" href="estilos/banner.css">
+    <link rel="stylesheet" href="estilos/blog.css">
+    <link rel="stylesheet" href="estilos/info.css">
+    <link rel="stylesheet" href="estilos/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-receta">Recetas Culinarias</h1>
+            <input type="checkbox" id="menu-bar">
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="recetas.html">Recetas</a>
+                <a href="consejos.html">Consejos</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <label class="icon-menu" for="menu-bar"></label>
+        </div>
+    </header>
+
+    <main>
+        <section id="banner">
+            <img src="imagenes/banner.jpg" width="800" alt="Banner de comida">
+            <div class="contenedor">
+                <h2>Recetas Culinarias</h2>
+            </div>
+        </section>
+
+        <section id="recetas">
+            <div class="contenedor">
+                <div class="receta" onclick="toggleInfo(this)">
+                    <img src="imagenes/receta1.jpg" alt="Pasta Carbonara">
+                    <div class="info-receta">
+                        <h3>Pasta Carbonara</h3>
+                        <p><strong>Ingredientes:</strong> 200g de pasta, 100g de panceta, 2 huevos, 50g de queso parmesano, sal y pimienta.</p>
+                        <p><strong>Preparación:</strong> Cocina la pasta. Fría la panceta. Mezcla huevos y queso. Mezcla todo con la pasta.</p>
+                        <p><strong>Utensilios:</strong> Sartén, olla, batidor.</p>
+                    </div>
+                </div>
+
+                <div class="receta" onclick="toggleInfo(this)">
+                    <img src="imagenes/receta2.jpg" alt="Ensalada César">
+                    <div class="info-receta">
+                        <h3>Ensalada César</h3>
+                        <p><strong>Ingredientes:</strong> Lechuga romana, crutones, queso parmesano, aderezo César, pechuga de pollo.</p>
+                        <p><strong>Preparación:</strong> Mezcla lechuga, crutones, y pollo. Añade queso y aderezo al gusto.</p>
+                        <p><strong>Utensilios:</strong> Cuenco, cuchillo, tenedor.</p>
+                    </div>
+                </div>
+
+                <div class="receta" onclick="toggleInfo(this)">
+                    <img src="imagenes/receta3.jpg" alt="Tarta de Manzana">
+                    <div class="info-receta">
+                        <h3>Tarta de Manzana</h3>
+                        <p><strong>Ingredientes:</strong> 200g de harina, 100g de mantequilla, 2 manzanas, 50g de azúcar, canela.</p>
+                        <p><strong>Preparación:</strong> Prepara la masa. Rellena con manzanas y hornea hasta dorar.</p>
+                        <p><strong>Utensilios:</strong> Rodillo, molde, batidor.</p>
+                    </div>
+                </div>
+
+                <div class="receta" onclick="toggleInfo(this)">
+                    <img src="imagenes/receta4.jfif" alt="Sopa de Lentejas">
+                    <div class="info-receta">
+                        <h3>Sopa de Lentejas</h3>
+                        <p><strong>Ingredientes:</strong> 200g de lentejas, 1 zanahoria, 1 cebolla, 2 dientes de ajo, caldo de verduras.</p>
+                        <p><strong>Preparación:</strong> Sofríe la cebolla y el ajo. Añade zanahorias y lentejas. Cocina con caldo.</p>
+                        <p><strong>Utensilios:</strong> Olla, cuchara de madera.</p>
+                    </div>
+                </div>
+
+                <div class="receta" onclick="toggleInfo(this)">
+                    <img src="imagenes/receta5.jfif" alt="Brownies">
+                    <div class="info-receta">
+                        <h3>Brownies</h3>
+                        <p><strong>Ingredientes:</strong> 200g de chocolate, 100g de mantequilla, 150g de azúcar, 2 huevos, 100g de harina.</p>
+                        <p><strong>Preparación:</strong> Derrite el chocolate. Mezcla con mantequilla, azúcar, y huevos. Añade harina y hornea.</p>
+                        <p><strong>Utensilios:</strong> Batidora, molde para hornear, espátula.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="info">
+            <h2>¿Sabías qué...</h2>
+            <h3>...la comida puede influir significativamente en tu salud y bienestar?</h3>
+            <div class="contenedor">
+                <div class="info-imagen">
+                    <img src="imagenes/info1.jpg" alt="Comida saludable">
+                    <h4>Comida Saludable</h4>
+                </div>
+                <div class="info-imagen">
+                    <img src="imagenes/info2.jpg" alt="Técnicas de cocina">
+                    <h4>Técnicas de Cocina</h4>
+                </div>
+                <div class="info-imagen">
+                    <img src="imagenes/info3.jpg" alt="Ingredientes frescos">
+                    <h4>Ingredientes Frescos</h4>
+                </div>
+                <div class="info-imagen">
+                    <img src="imagenes/info4.jfif" alt="Platos internacionales">
+                    <h4>Platos Internacionales</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p class="pie">CopyRight &copy; Melanie Granados</p>
+            <div class="sociales">
+                <a href="https://www.instagram.com/" class="icon-instagram"></a>
+                <a href="https://www.instagram.com/" class="icon-facebook"></a>
+                <a href="https://www.instagram.com/" class="icon-twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleInfo(element) {
+            const info = element.querySelector('.info-receta');
+            if (info.style.display === 'block') {
+                info.style.display = 'none';
+            } else {
+                document.querySelectorAll('.info-receta').forEach(el => el.style.display = 'none');
+                info.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
