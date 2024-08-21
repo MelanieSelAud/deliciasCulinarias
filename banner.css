@@ -1,0 +1,55 @@
+/* Colocar la imagen 50px debajo del menú */
+#banner {
+    margin-top: 50px;
+    position: relative;
+}
+
+/* Ajustamos el ancho y el alto al tamaño de la pantalla */
+#banner img {
+    width: 100%;
+}
+
+/* Posicionamos el texto sobre la imagen */
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #ffffff; /* Texto blanco */
+    transform: translateX(-50%);
+}
+
+/* Tamaño de letra al título */
+#banner h2 {
+    font-size: 60px;
+    color: #eac67a; /* Color dorado */
+}
+
+/* Estilo al botón "Leer más" */
+#banner a {
+    display: block;
+    width: 120px;
+    color: #ffffff; /* Texto marrón oscuro */
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 30px;
+    border: 3px solid #eac67a; /* Borde dorado */
+    text-align: center;
+}
+
+#banner a:hover {
+    background-color: #eac67a; /* Fondo dorado al pasar el cursor */
+    color: #4b2e2e; /* Texto marrón oscuro al pasar el cursor */
+}
+
+/* Código para diseño responsivo para pantallas de celular */
+@media (max-width: 768px) {
+    #banner h2 {
+        font-size: 40px; /* Reducir tamaño del título en pantallas pequeñas */
+    }
+
+    #banner a {
+        width: 100px;
+        padding: 8px;
+        font-size: 14px; /* Ajustar el tamaño del botón en pantallas pequeñas */
+    }
+}

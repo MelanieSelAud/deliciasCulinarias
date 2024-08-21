@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f9f5f0; /* Color de fondo suave */
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #4b2e2e; /* Color marrón oscuro que evoca chocolate o café */
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    z-index: 100;
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye espacio equitativamente */
+}
+
+h1 {
+    float: left;
+    font-size: 1.5em;
+    color: #eac67a; /* Color dorado para un toque de elegancia */
+    font-weight: bold;
+}
+
+.menu a {
+    color: #eac67a; /* Color dorado para enlaces */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #eac67a; /* Fondo dorado al pasar el cursor */
+    color: #4b2e2e; /* Texto marrón oscuro */
+}
+
+.menu-bar {
+    display: none;
+}
+
+section {
+    width: 100%;
+}
+
+footer {
+    background-color: #4b2e2e; /* Mismo color marrón oscuro */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer .sociales a {
+    color: #eac67a;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer .sociales a:hover {
+    color: #ffffff;
+}

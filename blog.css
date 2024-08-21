@@ -1,0 +1,29 @@
+/* Colocamos las imágenes en una tabla centrada */
+#blog .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Ajustamos el ancho de las imágenes */
+#blog img {
+    width: 100%;
+    max-width: 300px; /* Aseguramos que todas las imágenes tengan el mismo tamaño máximo */
+    height: auto; /* Mantener la proporción de la imagen */
+    object-fit: cover; /* Aseguramos que la imagen cubra completamente el contenedor sin distorsionarse */
+}
+
+/* Margen al artículo */
+#blog article {
+    margin: 15px;
+}
+
+/* Alineación de texto */
+#blog h3, #blog h4 {
+    text-align: center;
+}
+
+/* Estilo centrado para la sección de bienvenida */
+#bienvenidos {
+    text-align: center;
+}

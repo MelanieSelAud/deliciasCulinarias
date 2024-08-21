@@ -1,0 +1,89 @@
+/* Estilos para la sección de recetas */
+#recetas {
+    padding: 20px;
+    background-color: #f4f4f4; /* Color de fondo claro */
+}
+
+.recetas .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.receta {
+    flex: 1 1 calc(50% - 20px); /* Ajusta el tamaño de los elementos para 2 columnas */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.receta:hover {
+    transform: scale(1.05);
+}
+
+.receta img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-receta {
+    padding: 15px;
+    background-color: #fff;
+    color: #333;
+    display: none; /* Oculto por defecto */
+}
+
+.info-receta h3 {
+    margin-top: 0;
+}
+
+.info-receta p {
+    margin: 5px 0;
+}
+
+/* Diseño para el modal de recetas */
+.receta.active .info-receta {
+    display: block;
+}
+
+/* Sección de información adicional */
+#info {
+    padding: 20px;
+    background-color: #faaf3b; /* Color de fondo naranja intenso */
+    color: #fff;
+}
+
+#info h2, #info h3 {
+    text-align: center;
+}
+
+#info .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-imagen {
+    text-align: center;
+}
+
+.info-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-imagen h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}

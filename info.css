@@ -1,0 +1,23 @@
+/* Color de fondo y letra */
+#info {
+    background-color: #A0522D; /* Marrón estilo chocolate */
+    color: #fffaf0; /* Color crema claro */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Colocar imágenes en una tabla centrada */
+#info .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilo circular a las imágenes */
+.info-imagen img {
+    width: 180px;
+    height: 180px;
+    box-shadow: 10px 5px 5px #8B4513; /* Sombra marrón oscuro */
+    border-radius: 50%;
+    border: 7px solid #D2691E; /* Bordes color marrón rojizo */
+}
