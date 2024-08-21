@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc;
+    margin: 0;
+    padding: 0;
+}
+
+#contacto .contenedor {
+    background-color: #f5ebdc;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px; /* Incrementado el ancho máximo del contenedor */
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+    color: #4e2623;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#contacto p {
+    color: #4e2623;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+form ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+form li {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    color: #4e2623;
+    font-size: 16px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    padding: 10px; /* Ajustado para un poco más de comodidad */
+    border: 2px solid #c7b299;
+    border-radius: 4px;
+    font-size: 16px; /* Ajustado a un tamaño de fuente más razonable */
+    background-color: #fdf6e3;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 150px; /* Ajustado para un área de texto más grande */
+    min-width: 965px;
+    resize: none;
+}
+
+form button {
+    background-color: #d4a15a;
+    color: #fff;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #b8873a;
+}

@@ -1,0 +1,61 @@
+/* Oculta el menú por defecto */
+#menu-bar {
+    display: none;
+}
+
+/* Estilos para el ícono del menú */
+header label {
+    float: right;  /* Flota a la derecha */
+    font-size: 150%;
+    margin: 6px;
+    cursor: pointer;
+    color: #eac67a; /* Color dorado para el ícono del menú */
+}
+
+/* Estilos para el menú */
+.menu {
+    position: absolute; /* Posiciona el menú */
+    width: 100%;
+    height: 100%;
+    background-color: #4b2e2e; /* Fondo marrón oscuro */
+    top: 50px; /* Ubica el menú debajo del encabezado */
+    left: 0;
+    transition: transform 0.5s; /* Tiempo de transición */
+    transform: translateX(100%); /* Oculta el menú a la derecha */
+}
+
+/* Color del menú cuando se pasa el cursor */
+.menu a:hover {
+    background-color: #eac67a; /* Color dorado al pasar el cursor */
+    color: #4b2e2e; /* Texto marrón oscuro */
+}
+
+/* Mostrar el menú al hacer clic */
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%); /* Muestra el menú */
+}
+
+/* Estilos para los enlaces del menú */
+.menu a {
+    display: block;
+    color: #ffffff; /* Texto en blanco */
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid #eac67a; /* Bordes dorados entre los enlaces */
+}
+
+/* Diseño responsivo para pantallas de 1024px */
+@media (min-width: 1024px) {
+    .menu {
+        position: static; /* Elimina la posición absoluta */
+        width: auto;
+        height: auto;
+        transform: none; /* Elimina la transformación */
+        float: right;
+        display: flex; /* Muestra los elementos en fila */
+    }
+    .menu a {
+        border: none; /* Elimina los bordes */
+    }
+}
